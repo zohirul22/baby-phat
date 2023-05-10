@@ -562,18 +562,21 @@ main {
 		display: grid;
 		grid-template-columns: auto auto auto;
 		grid-gap: 10px;
-		margin: 10px 170px;
+		text-align: center;
 	}
 
 }
 
 @media only screen and (max-width: 768px) {
 
-	.feed {
+	.feed{
 		display: grid;
 		grid-template-columns: auto auto;
 		grid-gap: 10px;
-		margin: 10px 170px;
+		
+	}
+	.feed img{
+		margin: 0 auto;
 	}
 
 }
@@ -583,7 +586,10 @@ main {
 	.feed {
 		display: grid;
 		grid-template-columns: auto;
-		grid-gap: 10px;
-		margin: 10px 170px;
+		grid-gap: 10px;	
+	}
+	.feed img{
+		margin-left: 0;
+		margin-right: 0;
 	}
 }
