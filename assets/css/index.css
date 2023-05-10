@@ -3,6 +3,11 @@
 
 /*** Global css ***/
 
+* {
+    text-decoration: none;
+    list-style-type: none;
+}
+
 
 :root {
     --bg-color: #fdfdfd;
@@ -41,74 +46,6 @@
 
 
 /*** Header css ***/
-.logo {
-
-    font-size: 2.5rem;
-    color: var(--main-color);
-    font-weight: 500;
-    cursor: default;
-    margin-right: auto;
-}
-
-/* menu  */
-
-header {
-    /* position: fixed; */
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-
-
-}
-
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 100%;
-    margin: auto;
-}
-
-header nav .logo {
-    font-size: 35px;
-    color: #fff;
-    font-weight: 700;
-}
-
-header nav .logo span {
-    color: #0099bd;
-}
-
-header nav .nav-links a {
-    color: var(--text-color);
-    font-size: 18px;
-    margin-left: 35px;
-    text-transform: capitalize;
-    transition: 0.4s;
-}
-
-header nav .nav-links a:hover {
-    color: #0099bd;
-}
-
-#btnM {
-    display: none;
-    font-size: 30px;
-}
-
-
-
-/* menu  */
-
-
-
-/*** Header css ***/
-
 
 .title {
     text-align: center;
@@ -135,6 +72,120 @@ main {
 
 }
 
+
+/************* Carousel********* */
+.Carousel-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+
+
+}
+
+.Carousel-title h2 {
+    margin-left: 40px;
+    font-family: 'T-Star Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+
+}
+
+/* Slideshow container */
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    margin: 10px 30px;
+
+    justify-content: center;
+    transition: transform 0.5s ease;
+    text-align: center;
+}
+
+.single-slider {
+    padding: 0px 10px;
+}
+
+.single-slider img {
+    width: 80%;
+}
+
+.slider-desc {
+    text-align: center;
+}
+
+.slider-desc h3 {
+    font-family: 'T-Star Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #000000;
+
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.prev-btn {
+    left: 50px;
+}
+
+.next-btn {
+    right: 50px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    color: #000;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 767px) {
+    .slider-container {
+        flex-wrap: wrap;
+    }
+
+    .slider-container img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .slider-container img {
+        width: 100%;
+    }
+}
+
+/* slider bar */
+
+
+/************* Carousel********* */
 /* feature css start */
 
 .feature {
@@ -211,11 +262,11 @@ main {
 
 /* feature css end */
 
+
 .gifts-feature {
     display: grid;
     grid-template-columns: auto auto;
     gap: 20px;
-
     margin-top: 40px;
 }
 
@@ -248,5 +299,37 @@ main {
     font-weight: 400;
     font-size: 14px;
 
+    color: #FFFFFF;
+}
+
+/* slider */
+.slider {
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.slider .slider-description {
+    position: absolute;
+    left: 42px;
+    bottom: 50px;
+    padding: 0px 0px;
+}
+
+.slider .slider-description h1 {
+    font-family: 'T-Star Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+.slider .slider-description p {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
     color: #FFFFFF;
 }
