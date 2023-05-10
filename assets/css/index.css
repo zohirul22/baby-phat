@@ -68,8 +68,6 @@ main {
     font-size: 36px;
     line-height: 43px;
     color: #000000;
-
-
 }
 
 
@@ -98,6 +96,7 @@ main {
 .slider {
     position: relative;
     overflow: hidden;
+    margin-bottom: 40px;
 }
 
 .slider-container {
@@ -332,4 +331,69 @@ main {
     font-weight: 400;
     font-size: 14px;
     color: #FFFFFF;
+}
+
+/* believe-section */
+.believe {
+    font-family: 'T-Star Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 137.02%;
+    text-align: center;
+    color: #000000;
+    margin: 60px 30px;
+}
+
+.believe-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.single-believe img {
+    width: 80%;
+}
+
+.single-believe p {
+    font-family: 'T-Star Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #000000;
+
+
+}
+
+/* believe-section */
+
+.second-slider h1 {
+    font-family: 'T-Star Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    text-decoration: underline;
+    color: #000000;
+}
+
+/************* feed*********** */
+.feed-section h1{
+    text-align: center;
+    font-family: 'T-Star Pro';
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+margin-bottom: 20px;
+}
+.feed{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    grid-gap: 10px;
+    margin: 10px 170px;
 }
